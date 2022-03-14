@@ -58,7 +58,7 @@ USB line (57600bps/baud 8N1).
 
 The source code comes in an Arduino sketch. The "SdFat" library must be 
 installed within the Arduino system, and `SPI_DRIVER_SELECT` must be set to `2`
-in the `<SdFat.h>` header file.
+in the `<SdFatConfig.h>` header file.
 
 Load the `.ino` file and set the board to 'Arduino Due (Programming Port)`, 
 then chose the right port from the `Tools > Port` menu.
