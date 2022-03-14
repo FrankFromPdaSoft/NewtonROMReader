@@ -7,7 +7,7 @@ boards. Besides the well know US and German ROM, we were able to read
 prototype ROM boards for further research.
 
 Using the alternative Flash ROM Board, the ROM Reader can also program the
-Flash chipd and create new ROM Boards with patched or alternative 
+Flash chips and create new ROM Boards with patched or alternative 
 operating systems. 
 
 ## CAUTION
@@ -31,7 +31,7 @@ small. To make sure that the soldering is correct, the first tool to run
 in the Programmer should be the short circuit test.
 
 The last solder part is easy, but must not be forgotten. It's a jumper that 
-set the power to 3V. Connect the two eyes marke with an asterisk (*).
+set the power to 3V. Connect the two eyes marked with an asterisk (*).
 
 ```
 :
@@ -63,7 +63,7 @@ in the `<SdFat.h>` header file.
 Load the `.ino` file and set the board to 'Arduino Due (Programming Port)`, 
 then chose the right port from the `Tools > Port` menu.
 
-Open the serial monitor `Tools > Serail Monitor` and press `Ctrl-U` to upload
+Open the serial monitor `Tools > Serial Monitor` and press `Ctrl-U` to upload
 the firmware to the Programmer.  
 
 ## PCB Layout
@@ -72,7 +72,7 @@ The Programmer PCB was designed with Eagle CAD 7.7.0 Stadard Edition. It's a
 two layer board with no exeptional requirements.
 
 The SO-DIMM 72 modules are not very common anymore and are somewhat hard to 
-find. The SD Card socket is a standard SMD part. Pin headers shoudl be 
+find. The SD Card socket is a standard SMD part. Pin headers should be 
 square shaped to fit the Arduino receptables well.
 
 ## Usage
@@ -82,7 +82,7 @@ Functions can be selected by typing the command key and Return. Most commands
 will require confimation of the status of the programmer. Type "ok" and 
 Return to confirm your setup.
 
- - `s`: Check all connectors on the board fro short circuits. This tool helps
+ - `s`: Check all connectors on the board for short circuits. This tool helps
         verifying that there are no bridges in the DIMM connector soldering.
  - `e`: Check if the Flash memory is empty (all addresses return 0xFFFFFFFF).
  - `c`: Erase all sectors in the selected Flash area.
